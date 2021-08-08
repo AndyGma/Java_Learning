@@ -7,5 +7,7 @@ public class Main {
         // integer.setValue(10);
 
         System.out.println(MyInteger.MAX_VALUE);
+
+        System.out.println(Direction.LEFT);
     }
 }
