@@ -49,4 +49,8 @@ public class MyInteger {
     public int hashCode() {
         return Objects.hash(value);
     }
+
+    public static MyInteger valueOf(int value) {
+        return new MyInteger(value);
+    }
 }
