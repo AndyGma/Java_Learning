@@ -1,5 +1,7 @@
 package Les2;
 
+import java.util.Objects;
+
 /**
  * My integer
  *
@@ -9,8 +11,9 @@ package Les2;
 
 public class MyInteger {
 
-    private final int value;
+    public static final int MAX_VALUE = 0x7F_FF_FF_FF;
 
+    private final int value;
     /**
      *
      * @param value wrapped primitive value
@@ -32,5 +35,18 @@ public class MyInteger {
     @Override
     public String toString() {
         return String.valueOf(value);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        MyInteger integer = (MyInteger) o;
+        return value == integer.value;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(value);
     }
 }
