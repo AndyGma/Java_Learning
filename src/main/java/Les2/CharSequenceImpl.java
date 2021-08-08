@@ -2,7 +2,7 @@ package Les2;
 
 @Version(value = "1.1", date = "2021-08-08")
 
-public class CharSequenceImpl implements MyCharSequence, MyCharSequence2 { // implements - класс реализует интерфейс
+public class CharSequenceImpl implements MyCharSequence { // implements - класс реализует интерфейс
 
     char[] data;
 
@@ -21,8 +21,8 @@ public class CharSequenceImpl implements MyCharSequence, MyCharSequence2 { // im
         return new CharSequenceImpl();
     }
 
-    @Override
-    public MyCharSequence subSequence(int start) {
-        return MyCharSequence.super.subSequence(start);
-    }
+//    @Override
+//    public MyCharSequence subSequence(int start) {
+//        return MyCharSequence.super.subSequence(start);
+//    }
 }
