@@ -53,4 +53,8 @@ public class MyInteger {
     public static MyInteger valueOf(int value) {
         return new MyInteger(value);
     }
+
+    public class One {
+
+    }
 }
