@@ -1,5 +1,7 @@
 package Les2;
 
+@Version(value = "1.1", date = "2021-08-08")
+
 public class CharSequenceImpl implements MyCharSequence, MyCharSequence2 { // implements - класс реализует интерфейс
 
     char[] data;
