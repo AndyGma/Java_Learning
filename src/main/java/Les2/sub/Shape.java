@@ -10,7 +10,11 @@ public abstract class Shape {
         this.color = color;
     }
 
-    public Color getColor() {
+    protected Shape() {
+        System.out.println("Shape constructor");
+    }
+
+    public final Color getColor() {
         return color;
     }
 

@@ -5,6 +5,8 @@ public class Main {
     public static void main(String[] args) {
         Shape s = new Circle();
 
-        s.draw();
+        if (s instanceof Circle) {
+            System.out.println("Circle");
+        }
     }
 }

@@ -12,7 +12,7 @@ public class Circle extends Shape {
         super(color);
     }
 
-    @Override
+    @Override // метод который переопределяет базовый метод
     public void draw() {
         super.draw();
         System.out.println("circle");
