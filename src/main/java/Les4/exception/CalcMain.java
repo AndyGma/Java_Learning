@@ -13,7 +13,7 @@ public class CalcMain {
                 System.out.println(">");
                 String expr = reader.readLine();
                 double result = new CalculatorImpl().calculate(expr);
-                System.out.println(">>>" + result);
+                System.out.println(">>> " + result);
             }
         }
     }
