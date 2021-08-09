@@ -12,22 +12,13 @@ public class CalculatorImpl implements Calculator{ // класс реализу�
      */
 
     @Override
-    public double calculate(String expression) {
+    public double calculate(String expression) throws EvaluationException {
         Objects.requireNonNull(expression, "expression is null");
-//        if (expression == null) {
-//            throw new NullPointerException("expression is null");
-//        }
 
-        foo(expression);
+        if (expression.contains("!")) {
+            throw new EvaluationException("Unsupported operator found"); // найден неподдерживаемый оператор
+        }
+
         return 0;
-    }
-    private void foo(String expression) {
-        bar(expression);
-    }
-    private void bar(String expression) {
-        baz(expression);
-    }
-    private void baz(String expression) {
-        expression.toString();
     }
 }

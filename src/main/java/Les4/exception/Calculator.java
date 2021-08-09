@@ -2,5 +2,5 @@ package Les4.exception;
 
 public interface Calculator {
 
-    double calculate(String expression);
+    double calculate(String expression) throws EvaluationException;
 }
